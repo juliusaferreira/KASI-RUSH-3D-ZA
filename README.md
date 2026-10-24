@@ -1,11 +1,54 @@
-<div align="center">
+# Kasi Rush
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A fast-paced endless runner set in South Africa's townships. Ride the rails
+(or the neon streets), dodge traffic, grab coins and smash obstacles — all in
+a comic low-poly art style.
 
-  <h1>Built with AI Studio</h2>
+## Routes
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Soweto** — township rail yards with the Orlando Towers on the horizon,
+  a temporary bonus side lane that appears now and then
+- **Cape Town** — mountain-pass curves beneath Table Mountain
+- **Neon City** — five-lane asphalt night run with school buses, traffic and
+  glowing skyline
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Features
 
-</div>
+- 5-lane wide road mode on Neon City (3 lanes elsewhere)
+- Occasional bonus lane with its own gold rails on Soweto
+- Character powers: extra lives (Mr. Bones, Skullface), longer super-kicks and
+  bonus weapon hits (Sting Ray)
+- Weapons arsenal: baseball bat, crowbar, chainsaw and more, with smash counts
+  and cooldowns
+- Power-ups: jetpack skyway, magnet, super sneakers, 2x multiplier
+- Fully playable on mobile (portrait), swipe gestures for movement
+
+## Run Locally
+
+**Prerequisites:** Node.js
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the dev server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open http://localhost:3000
+
+## Production Build
+
+```bash
+npm run build
+npm run preview   # serves the built game on port 4173
+```
+
+## Deploying
+
+Any static host works (Vercel, Netlify, GitHub Pages via a workflow). Build
+with `npm run build` and publish the `dist/` folder.
